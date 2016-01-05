@@ -1,0 +1,43 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/navin/.nvm/versions/node/v5.1.0/bin/node',
+1 verbose cli   '/home/navin/.nvm/versions/node/v5.1.0/bin/npm',
+1 verbose cli   'dist-tag',
+1 verbose cli   'add',
+1 verbose cli   'demo@2.0.0' ]
+2 info using npm@3.5.2
+3 info using node@v5.1.0
+4 verbose dist-tag add latest to demo@2.0.0
+5 silly mapToRegistry name demo
+6 silly mapToRegistry using default registry
+7 silly mapToRegistry registry http://localhost:15443/
+8 silly mapToRegistry uri http://localhost:15443/demo
+9 verbose request uri http://localhost:15443/-/package/demo/dist-tags
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 9:14:54 PM
+12 verbose request id 3d6808a641054506
+13 http request GET http://localhost:15443/-/package/demo/dist-tags
+14 http 404 http://localhost:15443/-/package/demo/dist-tags
+15 verbose headers { 'content-type': 'application/json',
+15 verbose headers   date: 'Tue, 05 Jan 2016 15:44:54 GMT',
+15 verbose headers   connection: 'keep-alive',
+15 verbose headers   'content-length': '19' }
+16 verbose stack Error: missing : -/package/demo/dist-tags
+16 verbose stack     at makeError (/home/navin/.nvm/versions/node/v5.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+16 verbose stack     at CachingRegistryClient.<anonymous> (/home/navin/.nvm/versions/node/v5.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+16 verbose stack     at Request._callback (/home/navin/.nvm/versions/node/v5.1.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+16 verbose stack     at Request.self.callback (/home/navin/.nvm/versions/node/v5.1.0/lib/node_modules/npm/node_modules/request/request.js:198:22)
+16 verbose stack     at emitTwo (events.js:87:13)
+16 verbose stack     at Request.emit (events.js:172:7)
+16 verbose stack     at Request.<anonymous> (/home/navin/.nvm/versions/node/v5.1.0/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+16 verbose stack     at emitOne (events.js:82:20)
+16 verbose stack     at Request.emit (events.js:169:7)
+16 verbose stack     at IncomingMessage.<anonymous> (/home/navin/.nvm/versions/node/v5.1.0/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+17 verbose statusCode 404
+18 verbose cwd /home/navin/NodeSchool/how-to-npm
+19 error Linux 4.2.0-16-generic
+20 error argv "/home/navin/.nvm/versions/node/v5.1.0/bin/node" "/home/navin/.nvm/versions/node/v5.1.0/bin/npm" "dist-tag" "add" "demo@2.0.0"
+21 error node v5.1.0
+22 error npm  v3.5.2
+23 error code E404
+24 error 404 missing : -/package/demo/dist-tags
+25 verbose exit [ 1, true ]
